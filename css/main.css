@@ -1,17 +1,16 @@
-.body {
-  max height: 600px;
-  max width: 960px;
-}
+
 .container div {
   border: 1px solid black;
-  height: 20px;
-  width: 20px;
   display: inline-block;
-  margin: .5px;
 }
 .highlight {
   background-color: red !important;
 }
 .clear {
   background-color: white !important;
+}
+.drawpad {
+  overflow: auto;
+	width: 960px;
+	margin: auto;
 }
