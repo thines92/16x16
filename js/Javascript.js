@@ -4,7 +4,7 @@ var userChoice = 16;
 function clicked() {
      $(".container").remove();
      userChoice = prompt("How many squares on each side?");
-     var square_width = $('.drawpad').width()/userChoice - 2;
+     var square_size = $('.drawpad').width()/userChoice - 2;
 
      if (userChoice >=1 && userChoice <= 128) {
        for(i = 0; i < userChoice; i++) {
