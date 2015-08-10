@@ -1,17 +1,17 @@
 
-var userChoice;
+var userChoice = 16;
 
 
 function grid() {
 
   $(document).ready(function(){
-    for(i = 0; i < 16; i++) {
+    for(i = 0; i < userChoice; i++) {
       $("body").append("<div class='container'></div>");
     }
   });
 
   $(document).ready(function() {
-    for(i = 0; i < 16; i++) {
+    for(i = 0; i < userChoice; i++) {
       $(".container").append("<div></div>");
     };
   })
@@ -25,7 +25,7 @@ function grid() {
 grid();
 
 function clicked() {
-     $(".container div").addClass("clear");
-     var userChoice = prompt("Square feet");
-
+     $(".container").remove();
+     userChoice = prompt("How many squares on each side?");
+     grid()
 };
