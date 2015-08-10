@@ -1,4 +1,5 @@
 
+var userChoice;
 
 
 function grid() {
@@ -16,9 +17,15 @@ function grid() {
   })
   $(document).ready(function() {
     $(".container div").mouseenter(function() {
-      $(this).addClass("highlight")
+      $(this).addClass("highlight");
       });
     });
 }
 
 grid();
+
+function clicked() {
+     $(".container div").addClass("clear");
+     var userChoice = prompt("Square feet");
+
+};
